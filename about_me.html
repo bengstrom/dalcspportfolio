@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link href="my_website.css" rel="stylesheet" type="text/css">
+  </head>
+  <header>
+    <img src="images\LEAD_Logo.png" height="100">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about_me.html">About Me</a></li>
+    </ul>
+  </header>
+  <body>
+    <div class="w3-content w3-display-container">
+    <img class="mySlides" src="images/falkirk.jpg" height="250" style="float:right">
+    <img class="mySlides" src="images/home.jpg" height="250" style="float:right">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+    <p>Hello, I am Brian Engstrom! I am a teacher and engineering academy 
+    coordinator at Don Antonio Lugo High School in Chino, California. I 
+    currently teach Introduction to Design, Civil Engineering and Architecture,
+    Engieering Design and Development, and Computer Science Principles. In 
+    addition to my teaching duties, I am also the advisor for the Maker Club.
+    </p>
+    <p>
+      In my free time, I like to travel and enjoy nature.
+    </p>
+  </body>
+</html>
