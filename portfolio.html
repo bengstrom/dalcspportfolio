@@ -8,15 +8,26 @@
 </head>
 <header>
     <img src="images\LEAD_Logo.png" height="100">
+
     <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="about_me.html">About Me</a></li>
+    <li><a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a></li>
+    <li class="dropdown">
+        <a href="portfolio.html" class="dropbtn">Portfolio</a>
+        <div class="dropdown-content">
+            <a href="castings.html" class="w3-bar-item w3-button w3-mobile w3-dimgray">Casting</a>
+            </div>
+            </li>
+    <li><a href="about_me.html" class="w3-bar-item w3-button w3-mobile">About Me</a></li>
     </ul>
   </header>
 <body>
-    <p>This is my Portfolio Page!</p>
-    <img src="images/portfolio.jpg" height="250">
+    <p>Welcome to my portfolio project page! Here you can find more information
+    about various projects that I have worked on.</p>
+    <figure><a href="castings.html">
+        <img src="images/castings.jpg" height="250" width="256">
+    </a>
+    <figcaption style="max-width: 256px">Aluminium Casting</figcaption>
+    </figure>
     <br>
     <a target="_blank" href="https://scratch.mit.edu">
         <img src="images/scratchlogo.png" height="100">

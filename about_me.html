@@ -5,20 +5,25 @@
     <title>Home</title>
     <link href="my_website.css" rel="stylesheet" type="text/css">
   </head>
-  <header>
+<header>
     <img src="images\LEAD_Logo.png" height="100">
     <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="about_me.html">About Me</a></li>
+        <li><a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a></li>
+        <li class="dropdown">
+            <a href="portfolio.html" class="dropbtn">Portfolio</a>
+            <div class="dropdown-content">
+                <a href="castings.html" class="w3-bar-item w3-button w3-mobile w3-dimgray">Casting</a>
+            </div>
+        </li>
+        <li><a href="about_me.html" class="w3-bar-item w3-button w3-mobile">About Me</a></li>
     </ul>
-  </header>
+</header>
   <body>
     <div class="w3-content w3-display-container">
-    <img class="mySlides" src="images/falkirk.jpg" height="250" style="float:right">
-    <img class="mySlides" src="images/home.jpg" height="250" style="float:right">
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <img class="mySlides" src="images/falkirk.jpg" height="250" width="333" style="float:right">
+    <img class="mySlides" src="images/london.jpg" height="250" width="333" style="float:right">
+    <img class="mySlides" src="images/alaska.jpg" height="250" width="333" style="float:right">
+    <img class="mySlides" src="images/cats.jpg" height="250" width="333" style="float:right">
     </div>
     <script>
 var slideIndex = 0;
@@ -43,7 +48,9 @@ function carousel() {
     addition to my teaching duties, I am also the advisor for the Maker Club.
     </p>
     <p>
-      In my free time, I like to travel and enjoy nature.
+      My wife, Shail, and I like traveling and enjoying nature. We have two cats, 
+      Abacus and Elphie. Abacus is half mountain lion and half wookie. Elphie
+      is an inconvient shedding machine.
     </p>
   </body>
 </html>
