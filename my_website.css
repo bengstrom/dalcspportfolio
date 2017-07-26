@@ -23,15 +23,15 @@ body{
    }
 
    tr   {
-	  border: 1px solid #ffffff;
 	  text-align: center;
-	  background-color:#9FB6CD;
   }
 
   th   {
 	 text-align: center;
-	 color: #ffffff;
-	 background-color: #003366;
+  }
+  
+  td {
+      padding: 15px;
   }
   
   ul {
