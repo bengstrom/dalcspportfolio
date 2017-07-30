@@ -1,0 +1,95 @@
+body{
+       font-family: "Marker Felt", "Comic Sans MS", fantasy;
+ 	 color: #003366;
+ 	 background-color: rgb(22,34,43); 
+ 	 background: linear-gradient(rgba(13,18,23,1), rgba(22,34,43,.9));
+    }
+
+    h1  {
+ 	   font-size: 1.3em;
+ 	   text-align: center;
+ 	   color: white;
+    }
+    
+    p, figcaption {
+        color: white;
+    }
+
+   table {
+ 	   margin-left: auto;
+ 	   margin-right: auto;
+ 	   text-align: left;
+ 	   border-collapse: collapse;
+   }
+
+   tr   {
+	  text-align: center;
+  }
+
+  th   {
+	 text-align: center;
+  }
+  
+  td {
+      padding: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(13,18,23);
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: dimgray;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(13,18,23);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: dimgray}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+div {
+    clear:right;
+}
+
+figcaption {
+        color: white;
+        text-align: center;
+    }

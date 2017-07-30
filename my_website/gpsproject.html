@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link href="my_website.css" rel="stylesheet" type="text/css">
+</head>
+<header>
+    <img src="images\LEAD_Logo.png" height="100">
+
+    <ul>
+        <li><a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a></li>
+        <li class="dropdown">
+            <a href="portfolio.html" class="dropbtn">Portfolio</a>
+            <div class="dropdown-content">
+                <a href="gpsproject.html" class="w3-bar-item w3-button w3-mobile w3-dimgray">Arena Finder</a>
+                <a href="castings.html" class="w3-bar-item w3-button w3-mobile w3-dimgray">Casting</a>
+                <a target="_blank" href="https://repl.it/Jl7n/95" class="w3-bar-item w3-button w3-mobile w3-dimgray">Interactive Fiction</a>
+                <a target="_blank" href="https://scratch.mit.edu/projects/169741832/" class="w3-bar-item w3-button w3-mobile w3-dimgray">Save the Baby</a>
+                <a target="_blank" href="https://scratch.mit.edu/projects/169728955/" class="w3-bar-item w3-button w3-mobile w3-dimgray">Superman Vs. Lex</a>
+            </div>
+        </li>
+        <li><a href="about_me.html" class="w3-bar-item w3-button w3-mobile">About Me</a></li>
+    </ul>
+</header>
+<body>
+    <div class="w3-content w3-display-container">
+    <figure class="images_hz">
+        <img src="images/arenahome.png" width="256">
+    <figcaption style="max-width: 256px">Home Screen</figcaption>
+    </figure>
+    <figure class="images_hz">
+        <img src="images/arenalist.png" width="256">
+    <figcaption style="max-width: 256px">Arena List</figcaption>
+    </figure>
+    <figure class="images_hz">
+        <img src="images/arenamap.png" width="256">
+    <figcaption style="max-width: 256px">Map of Arena</figcaption>
+    </figure>
+    <figure class="images_hz">
+        <img src="images/arenaadd.png" width="256">
+    <figcaption style="max-width: 256px">Add an Arena</figcaption>
+    </figure>
+    </div>
+    <script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("images_hz");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+    <p>Arena Finder is an app to find southern California sports arenas. The app leverages, built in
+    GPS and Google Maps integration to provide directions to each location and to find more information
+    about each venue. If an arena is not listed, it can be added to the list for future reference.</p>
+    <p>A copy of the App Inventor code can be downloaded by clicking <a href="files/GPS_Project.aia">here</a>.</p>
+
+</body>
+
+</html>
