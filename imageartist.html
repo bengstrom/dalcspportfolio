@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link href="my_website.css" rel="stylesheet" type="text/css">
+</head>
+<header>
+    <img src="images\LEAD_Logo.png" height="100">
+
+    <ul>
+        <li><a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a></li>
+        <li class="dropdown">
+            <a href="portfolio.html" class="dropbtn">Portfolio</a>
+            <div class="dropdown-content">
+                <a href="gpsproject.html" class="w3-bar-item w3-button w3-mobile w3-dimgray">Arena Finder</a>
+                <a href="castings.html" class="w3-bar-item w3-button w3-mobile w3-dimgray">Casting</a>
+                <a target="_blank" href="https://repl.it/Jl7n/95" class="w3-bar-item w3-button w3-mobile w3-dimgray">Interactive Fiction</a>
+                <a target="_blank" href="https://repl.it/JoPM/8" class="w3-bar-item w3-button w3-mobile w3-dimgray">Pokemon Battle</a>
+                <a target="_blank" href="https://scratch.mit.edu/projects/169741832/" class="w3-bar-item w3-button w3-mobile w3-dimgray">Save the Baby</a>
+                <a target="_blank" href="https://scratch.mit.edu/projects/169728955/" class="w3-bar-item w3-button w3-mobile w3-dimgray">Superman Vs. Lex</a>
+            </div>
+        </li>
+        <li><a href="about_me.html" class="w3-bar-item w3-button w3-mobile">About Me</a></li>
+    </ul>
+</header>
+<body>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="images/miranda_LSB.png" height="300">
+        <img class="mySlides" src="images/emma_LSB.png" height="300">
+        <img class="mySlides" src="images/Superman_LSB.png" height="300">
+        <img class="mySlides" src="images/taylor_LSB.png" height="300">
+        <img class="mySlides" src="images/wanda_LSB.png" height="300">
+        <img class="mySlides" src="images/danvers_LSB.png" height="300">
+    </div>
+    <script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+    <p>LSB is a Python program that creates stylized images like those shown 
+    on Lip Sync Battle. It takes an image with a transparent background and
+    creates two shifted "shadows", each in a different color. The spacing between
+    shifts can be controlled with the offset variable. The result is saved as 
+    original_filename_LSB.png.</p>
+    <p>A copy of the code can be downloaded by clicking <a href="files/LSB.py">here</a>.</p>
+
+</body>
+
+</html>
